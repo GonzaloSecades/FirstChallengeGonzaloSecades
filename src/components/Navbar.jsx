@@ -1,0 +1,33 @@
+import { Link } from 'react-router-dom'
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-brand">
+          Shop
+        </Link>
+        <div className="navbar-links">
+          <Link className="navbar-link" to="/">
+            Home
+          </Link>
+          <Link className="navbar-link" to="/checkout">
+            Cart
+          </Link>
+        </div>
+        <div className="navbar-auth">
+          <div className="navbar-auth-links">
+            <Link to="/auth" className="btn btn-secondary">
+              Login
+            </Link>
+            <Link to="/auth" className="btn btn-primary">
+              Sign Up
+            </Link>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
+
+export default Navbar
